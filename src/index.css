@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:ital,wght@0,900;1,900&display=swap');
+
+@theme {
+  --font-sans: "Inter", "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  
+  --color-brand-bg: var(--c-bg);
+  --color-brand-text: var(--c-text);
+  --color-brand-primary: var(--c-primary);
+  --color-brand-primary-content: var(--c-primary-text);
+  --color-brand-secondary: var(--c-secondary);
+  --color-brand-surface: var(--c-surface);
+  --color-brand-surface-alt: var(--c-surface-alt);
+  --color-brand-border: var(--c-border);
+  --color-brand-inverse: var(--c-inverse);
+  --color-brand-inverse-text: var(--c-inverse-text);
+}
+
+@layer base {
+  :root {
+    /* Pattern 1: Midnight Neon (Cyber) - Default for visual impact */
+    --c-bg: #0B0E14;
+    --c-text: #E2E8F0;
+    --c-primary: #00FF9D;
+    --c-primary-text: #0B0E14;
+    --c-secondary: #B14CFF;
+    --c-surface: #151A23;
+    --c-surface-alt: #1F2633;
+    --c-border: #2D3748;
+    --c-inverse: #E2E8F0;
+    --c-inverse-text: #0B0E14;
+  }
+
+  .theme-monochrome {
+    /* Pattern 2: Gallery Monochrome */
+    --c-bg: #FFFFFF;
+    --c-text: #111111;
+    --c-primary: #000000;
+    --c-primary-text: #FFFFFF;
+    --c-secondary: #666666;
+    --c-surface: #F9F9F9;
+    --c-surface-alt: #EEEEEE;
+    --c-border: #E5E5E5;
+    --c-inverse: #111111;
+    --c-inverse-text: #FFFFFF;
+  }
+
+  .theme-sunset {
+    /* Pattern 3: Sunset Clay (Warm) */
+    --c-bg: #FCFAF5;
+    --c-text: #4A3B32;
+    --c-primary: #D86C4F;
+    --c-primary-text: #FFFFFF;
+    --c-secondary: #E6B97A;
+    --c-surface: #FFFFFF;
+    --c-surface-alt: #F4EFEA;
+    --c-border: #E8DDCE;
+    --c-inverse: #4A3B32;
+    --c-inverse-text: #FCFAF5;
+  }
+
+  body {
+    background-color: var(--c-bg);
+    color: var(--c-text);
+    @apply font-sans selection:bg-brand-secondary selection:text-white transition-colors duration-700 ease-in-out;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "はじめのレスタイルズ日記",
+  "description": "初心者向け爬虫類飼育の魅力と、適切な飼育方法を伝えるレスポンシブLP。ユーザー行動分析のための動線設計済み。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
