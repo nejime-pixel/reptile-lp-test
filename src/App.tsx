@@ -233,7 +233,7 @@ export default function App() {
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/public/images/leopard_gecko_hero_1779006098556.png" 
+            src="/images/leopard_gecko_hero_1779006098556.png" 
             alt="Hero Background" 
             className="w-full h-full object-cover scale-105 blur-[2px] opacity-20"
             referrerPolicy="no-referrer"
@@ -325,14 +325,14 @@ export default function App() {
             <ComparisonCard 
               type="Desert Type"
               title="ヒョウモントカゲモドキ"
-              image="/public/images/leopard_gecko_hero_1779006098556.png"
+              image="/images/leopard_gecko_hero_1779006098556.png"
               features={["地上を歩くのが得意", "豊富なカラーバリエーション", "乾燥した環境を好む"]}
               price="¥5,000 〜"
             />
             <ComparisonCard 
               type="Forest Type"
               title="クレステッドゲッコウ"
-              image="/public/images/crested_gecko_hero_1779006116703.png"
+              image="/images/crested_gecko_hero_1779006116703.png"
               features={["壁を登ることができる", "昆虫なしの専用フードで飼育可能", "湿度が高い環境を好む"]}
               price="¥15,000 〜"
             />
@@ -400,7 +400,7 @@ export default function App() {
               className="lg:w-1/2 relative"
             >
               <img 
-                src="/public/images/reptile_starter_kit_1779006131449.png" 
+                src="/images/reptile_starter_kit_1779006131449.png" 
                 alt="Starter Kit" 
                 className="rounded-[60px] shadow-2xl relative z-10"
                 referrerPolicy="no-referrer"
